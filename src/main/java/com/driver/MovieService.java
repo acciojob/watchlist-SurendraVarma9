@@ -33,5 +33,20 @@ public class MovieService {
          return movieRepository.getmovielist();
      }
 
+     void pairdm(String director,String movie){
+         movieRepository.directormovie(director,movie);
+     }
+
+     List<String> getdirectormovies(String director){
+         return movieRepository.directedmovies(director);
+     }
+
+     void deletemovies(String name){
+         movieRepository.deletedirectormovies(name);
+     }
+
+     void deletedirectors(){
+         movieRepository.deletealldirectors();
+     }
 
 }
